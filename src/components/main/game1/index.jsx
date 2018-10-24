@@ -54,7 +54,7 @@ class Game1 extends Component {
           const images = [...avatars];
           const top = this.getRandomInt(10, 0);
           const left = this.getRandomInt(10, 600);
-          const duration = this.getRandomInt(10, 13);
+          const duration = this.getRandomInt(2, 5);
           images[
             images.length - 1
           ].style.animation = `createBox ${duration}s linear infinite `;
