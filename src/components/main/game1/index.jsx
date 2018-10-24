@@ -61,7 +61,7 @@ class Game1 extends Component {
           images[images.length - 1].style.margin = "40px";
           images[images.length - 1].style.top = `${top}px`;
           images[images.length - 1].style.left = `${left}px`;
-        }, 2000);
+        }, 1000);
   
         this.checkInt = setInterval(() => {
           const avatars = this.refs.avatars.children;
