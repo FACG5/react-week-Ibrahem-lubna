@@ -20,9 +20,7 @@ class UserInfo extends Component {
   showGame = () => {
     this.setState({ showGame: !this.state.showGame});
   };
-  showGame1 = () => {
-    console.log(5);
-    
+  showGame1 = () => {    
     this.setState({ showGame1: !this.state.showGame1});
   };
   getRepos = async link => {
