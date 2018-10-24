@@ -1,0 +1,68 @@
+.mainDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px;
+}
+
+.input {
+  width: 400px;
+  border-radius: 10px;
+  background: #d8dfdb13;
+  justify-self: left;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  transition-duration: 0.4s;
+  height: 80px;
+}
+.input:hover {
+  background: #d8dfdb27;
+}
+h1 {
+  font-size: 16px;
+}
+
+input {
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+button {
+  margin-left: 20px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+button:hover {
+  background: #dddddd7a;
+}
+
+@keyframes spin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }
+  
+
+  
+  .loading:before {
+    content: '';
+    position: absolute;
+    left: 70px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid transparent;
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite; 
+  }
