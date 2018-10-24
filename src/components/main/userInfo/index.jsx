@@ -20,14 +20,11 @@ class UserInfo extends Component {
   showGame = () => {
     this.setState({ showGame: !this.state.showGame});
   };
-  showGame1 = () => {
-    console.log(5);
-    
+  showGame1 = () => {    
     this.setState({ showGame1: !this.state.showGame1});
   };
   getRepos = async link => {
-    const link1 = link+'?access_token=288929944ce2bd9015f5b765ca08b257bc7e595e'
-    const repos = await getUserData(link1);
+    const repos = await getUserData(link);
     this.setState({ repos, showRepos: true });
   };
   render() {

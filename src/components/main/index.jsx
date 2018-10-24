@@ -11,7 +11,7 @@ class Main extends Component {
 
   fetchApi = async () => {
     this.setState({ data: null, loading: true, clicked: false });
-    const link = `https://api.github.com/users/${this.state.username}?access_token=288929944ce2bd9015f5b765ca08b257bc7e595e`;
+    const link = `https://api.github.com/users/${this.state.username}`;
     const data = await getUserData(link);
     this.props.show(true);
     this.setState({ data, loading: false});
