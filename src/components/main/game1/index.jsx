@@ -54,14 +54,14 @@ class Game1 extends Component {
           const images = [...avatars];
           const top = this.getRandomInt(10, 0);
           const left = this.getRandomInt(10, 600);
-          const duration = this.getRandomInt(5, 10);
+          const duration = this.getRandomInt(5, 7);
           images[
             images.length - 1
           ].style.animation = `createBox ${duration}s linear infinite `;
           images[images.length - 1].style.margin = "40px";
           images[images.length - 1].style.top = `${top}px`;
           images[images.length - 1].style.left = `${left}px`;
-        }, 100);
+        }, 20);
   
         this.checkInt = setInterval(() => {
           const avatars = this.refs.avatars.children;
